@@ -4,6 +4,7 @@ Team Details :
 1. Bobbepalli Venkata Gopi Krishna
 2. Shaik Imran
 3. pallepogu Prasanth
+   
 INTRODUCTION
 Black Friday, traditionally the day following thanksgiving, has evolved into a major shopping event characterized by deep discounts and high consumer spending. Originally dubbed "Black Friday" due to the chaos it caused, this day now represents a critical opportunity for retailers to boost sales and attract customers with attractive deals . As such, accurately predicting sales on Black Friday is of utmost importance for retailers seeking to maximize their profits and optimize their operations.
 This Paper aims to develop a predictive model for forecasting sales on Black Friday using machine learning techniques . By analyzing historical sales data, demographic information, and other relevant factors, the model seeks to provide insights into consumer behavior and preferences . These insights can help retailers make informed decisions about inventory management, marketing strategies, and product offerings.
