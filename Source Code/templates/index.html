@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(135deg, #5ee7df, #b490ca);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 40%;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: calc(100% - 22px); /* Adjusted width to accommodate padding and border */
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        button {
+            width:20%;
+            background-color: #27d830; /* Red */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Black Friday Sales Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"  placeholder="Age [range = 0 to 6]" required="required" pattern="[0-6]" title="Numbers only, please.[range = 0 to 6]"/><br>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" placeholder="Occupation Code [range = 1 to 20]" required="required" pattern="([1-9]|1\d|20)" title="Numbers only, please. [range = 1 to 20]"/><br>
+
+        <label for="stay_in_current_city_years">Stay in Current City (Years):</label>
+        <input type="text" id="stay_in_current_city_years" name="stay_in_current_city_years" placeholder="Stay in Current City [range = 0 to 4]" required="required" pattern="[0-4]" title="Numbers only, please.[range = 0 to 4]"/><br>
+
+        <label for="product_category_1">Product Category 1:</label>
+        <input type="text" id="product_category_1" name="product_category_1" placeholder="Product Category 1 [range = 1 to 20]" required="required" pattern="([1-9]|1\d|20)" title="Numbers only, please. [range = 1 to 20]"/><br>
+
+        <label for="product_category_2">Product Category 2:</label>
+        <input type="text" id="product_category_2" name="product_category_2" placeholder="Product Category 2 [range = 1 to 20]" required="required" pattern="([1-9]|1\d|20)" title="Numbers only, please. [range = 1 to 20]"/><br>
+
+        <label for="product_category_3">Product Category 3:</label>
+        <input type="text" id="product_category_3" name="product_category_3" placeholder="Product Category 3 [range = 1 to 20]" required="required" pattern="([1-9]|1\d|20)" title="Numbers only, please. [range = 1 to 20]"/><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
